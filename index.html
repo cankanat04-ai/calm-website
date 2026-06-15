@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CALM — Compact Adjustable Laser Module. Extend effective laser focusing range to 15 m with adjustable Galilean optics." />
+  <title>CALM — Compact Adjustable Laser Module</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-backdrop" aria-hidden="true">
+    <div class="site-backdrop-product"></div>
+    <div class="site-backdrop-veil"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top">
+        <span class="logo-mark">◉</span>
+        CALM
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-product"></div>
+        <div class="hero-bg-glow"></div>
+        <div class="hero-bg-fade"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow">Compact Adjustable Laser Module</p>
+        <h1>Precision focusing up to <span class="highlight">15 meters</span></h1>
+        <p class="hero-lead">
+          CALM transforms fixed-focus laser modules into adaptable optical systems.
+          Adjustable Galilean lens spacing maintains beam concentration across variable distances —
+          without increasing laser power.
+        </p>
+        <div class="hero-actions">
+          <a href="#solution" class="btn btn-primary">Explore the technology</a>
+          <a href="#specs" class="btn btn-secondary">View specifications</a>
+        </div>
+        <dl class="hero-stats">
+          <div>
+            <dt>15 m</dt>
+            <dd>Effective focusing range</dd>
+          </div>
+          <div>
+            <dt>Galilean</dt>
+            <dd>Optical configuration</dd>
+          </div>
+          <div>
+            <dt>Compact</dt>
+            <dd>Barrel module design</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="problem" class="section">
+      <div class="container split">
+        <div>
+          <p class="section-label">The challenge</p>
+          <h2>Fixed-focus lasers lose energy at variable distances</h2>
+          <p>
+            Compact laser modules are typically optimized for a single focal distance. As the target
+            plane moves closer or farther away, beam divergence increases spot size and spreads optical
+            power over a larger area — reducing irradiance and weakening performance.
+          </p>
+          <p>
+            Simply increasing laser power adds thermal load, cost, and safety requirements. The smarter
+            engineering path is to improve how the existing beam is delivered to the target.
+          </p>
+        </div>
+        <div class="card card-accent">
+          <h3>What happens without adaptive focusing</h3>
+          <ul class="icon-list">
+            <li>Beam spreads as distance changes</li>
+            <li>Energy density drops at the target plane</li>
+            <li>Fixed geometry limits operational flexibility</li>
+            <li>Higher power becomes the default workaround</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="section section-dark">
+      <div class="container">
+        <p class="section-label">The CALM approach</p>
+        <h2>Adjustable optics, not higher power</h2>
+        <p class="section-intro">
+          CALM uses a Galilean lens arrangement — a concave and convex lens pair — inside a compact
+          barrel. A single-axis mechanical adjustment changes lens spacing to shift the focal condition
+          across a 0–15 m operating range.
+        </p>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Galilean configuration</h3>
+            <p>Negative and positive lenses modify beam propagation and enable focal shift without changing the laser source.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Mechanical adjustability</h3>
+            <p>Single-axis lens spacing control adapts the module to variable target distances with repeatable positioning.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Simulation-validated</h3>
+            <p>MATLAB-based 2D ray-tracing confirms the optical layout supports precise focusing up to 15 m.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">04</div>
+            <h3>Compact integration</h3>
+            <p>Optical elements are packaged in a cylindrical barrel that maintains axial alignment and compact dimensions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <p class="section-label">System architecture</p>
+        <h2>From laser source to concentrated target beam</h2>
+        <div class="diagram">
+          <div class="diagram-flow">
+            <div class="diagram-node">
+              <span class="node-title">Laser module</span>
+              <span class="node-desc">Initial beam source</span>
+            </div>
+            <div class="diagram-arrow">→</div>
+            <div class="diagram-node">
+              <span class="node-title">Concave lens</span>
+              <span class="node-desc">f = −25 mm</span>
+            </div>
+            <div class="diagram-arrow">↔</div>
+            <div class="diagram-node diagram-node-active">
+              <span class="node-title">Adjustable spacing</span>
+              <span class="node-desc">75 mm nominal</span>
+            </div>
+            <div class="diagram-arrow">→</div>
+            <div class="diagram-node">
+              <span class="node-title">Convex lens</span>
+              <span class="node-desc">f = +100 mm</span>
+            </div>
+            <div class="diagram-arrow">→</div>
+            <div class="diagram-node">
+              <span class="node-title">Target plane</span>
+              <span class="node-desc">0 – 15 m range</span>
+            </div>
+          </div>
+          <p class="diagram-caption">
+            Lens positions at 150 mm and 225 mm along the optical axis. Minimum verified barrel length: 225 mm.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Component</th>
+                <th>Function</th>
+                <th>Contribution</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Laser module</td>
+                <td>Provides the initial beam source</td>
+                <td>Supplies optical input for the focusing module</td>
+              </tr>
+              <tr>
+                <td>Concave lens</td>
+                <td>Modifies beam divergence</td>
+                <td>Supports focal shift in the Galilean configuration</td>
+              </tr>
+              <tr>
+                <td>Convex lens</td>
+                <td>Refines propagation toward target</td>
+                <td>Concentrates the beam at selected distances</td>
+              </tr>
+              <tr>
+                <td>Adjustable mechanism</td>
+                <td>Changes lens spacing</td>
+                <td>Enables focusing over variable target distances</td>
+              </tr>
+              <tr>
+                <td>Compact barrel</td>
+                <td>Holds elements on the optical axis</td>
+                <td>Maintains alignment and compact packaging</td>
+              </tr>
+              <tr>
+                <td>Anti-reflective coating</td>
+                <td>Reduces back reflections</td>
+                <td>Improves transmission efficiency and reliability</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs" class="section section-dark">
+      <div class="container">
+        <p class="section-label">Technical specifications</p>
+        <h2>Optical parameters</h2>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <span class="spec-label">Optical configuration</span>
+            <span class="spec-value">Galilean lens arrangement</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Lens diameter</span>
+            <span class="spec-value">25.4 mm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">First lens focal length</span>
+            <span class="spec-value mono">f₁ = −25 mm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Output lens focal length</span>
+            <span class="spec-value mono">f₂ = +100 mm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Nominal lens spacing</span>
+            <span class="spec-value mono">d = 75 mm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Simulation wavelength</span>
+            <span class="spec-value mono">λ = 450 nm</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">First lens position</span>
+            <span class="spec-value">150 mm (optical axis)</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Second lens position</span>
+            <span class="spec-value">225 mm (optical axis)</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Minimum barrel length</span>
+            <span class="spec-value">225 mm (verified)</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Focusing range</span>
+            <span class="spec-value highlight-text">Up to 15 m</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section">
+      <div class="container">
+        <p class="section-label">Why CALM</p>
+        <h2>Engineering advantages for variable-distance applications</h2>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <h3>Higher energy density</h3>
+            <p>Smaller focal spot area increases irradiance at the target without raising laser power.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Distance adaptability</h3>
+            <p>Adjustable lens spacing replaces the single-distance limitation of fixed-focus modules.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Compact form factor</h3>
+            <p>Long-range focusing capability packaged in a barrel-like module instead of bulky assemblies.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Optical efficiency</h3>
+            <p>Anti-reflective coatings reduce back reflections and transmission losses for reliable performance.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Lower thermal demand</h3>
+            <p>Improved beam delivery reduces dependence on high-power laser sources and associated cooling.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>Lab-ready concept</h3>
+            <p>Suitable for variable-distance laboratory demonstrations and compact engineering prototypes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container split">
+        <div>
+          <p class="section-label">Applications</p>
+          <h2>Where adaptive focusing matters</h2>
+          <p>
+            CALM is designed for scenarios where target distance changes but beam concentration must
+            remain useful — laboratory optical setups, engineering demonstrations, and compact systems
+            that cannot rely on fixed focal geometry.
+          </p>
+        </div>
+        <ul class="app-list">
+          <li>Variable-distance laser targeting experiments</li>
+          <li>Compact optical prototyping and education</li>
+          <li>Energy-efficient beam delivery research</li>
+          <li>Galilean optics integration studies</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section safety">
+      <div class="container">
+        <div class="safety-banner">
+          <h2>Safety notice</h2>
+          <p>
+            CALM is an optical focusing concept for controlled laboratory environments. Any practical
+            laser work requires beam enclosures, certified eye protection, access control, warning labels,
+            and compliance with applicable laser safety standards. Never direct laser output toward people,
+            animals, vehicles, aircraft, or uncontrolled environments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-cta">
+      <div class="contact-bg" aria-hidden="true">
+        <div class="contact-bg-image"></div>
+        <div class="contact-bg-glow"></div>
+        <div class="contact-bg-veil"></div>
+      </div>
+      <div class="container cta-content">
+        <p class="section-label">Get in touch</p>
+        <h2>Interested in CALM for your project?</h2>
+        <p>
+          Reach out to discuss the optical focusing module, technical details, or collaboration
+          opportunities for laboratory and engineering applications.
+        </p>
+        <div class="contact-card">
+          <div>
+            <span class="contact-label">Project lead</span>
+            <strong>Can Kanat</strong>
+          </div>
+          <div>
+            <span class="contact-label">Contact Information</span>
+            <a href="mailto:can.kanat@bahcesehir.edu.tr" class="contact-email">can.kanat@bahcesehir.edu.tr</a>
+          </div>
+          <a href="mailto:can.kanat@bahcesehir.edu.tr" class="btn btn-primary">Send an inquiry</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>CALM</strong> — Compact Adjustable Laser Module</p>
+      <p>Keep CALM & Stay Focused</p>
+      <p class="footer-meta">&copy; 2026 CK Industries. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
